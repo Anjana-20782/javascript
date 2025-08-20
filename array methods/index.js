@@ -34,3 +34,12 @@
 
 // let newarr=arr.concat(brr)
 // console.log(newarr);
+
+
+let arr=["hello",45,34]
+
+let brr=arr.join("")
+    console.log(brr);
+
+
+
