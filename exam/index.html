@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Staff Details</h1>
+
+    <form id="frm">
+    <label>Name</label>
+    <input type="text" placeholder="enter your name" id="name1"><br><br>
+
+    <label>Age</label>
+    <input type="text" placeholder="enter your age" id="age"><br><br>
+
+    <label>Department</label>
+    <select id="select">
+      <option value="" disabled selected>SELECT</option>
+      <option value="HTML">Mern</option>
+      <option value="CSS">Python</option>
+      <option value="JS">Cyber</option>
+    </select><br><br>
+
+    <label>Salary</label>
+    <input type="text" placeholder="enter your salary" id="salary"><br><br>
+
+    <button >Add Staff</button>
+
+    </form>
+
+   
+    <table border="1">
+
+     <thead>
+
+      <tr>
+
+        <th>ID</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Department</th>
+        <th>Salary</th>
+      </tr>
+     </thead>
+     <tbody id="tablebody"></tbody>
+    </table>
+    <script src="./index.js"></script>
+    
+</body>
+</html>
