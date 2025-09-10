@@ -38,7 +38,7 @@
 
 let arr=["hello",45,34]
 
-let brr=arr.join("")
+let brr=arr.gjoin("")
     console.log(brr);
 
 
