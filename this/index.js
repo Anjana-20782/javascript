@@ -43,14 +43,29 @@
 
 
 
+// function myName(name,city){
+
+// console.log(`My name is ${name}.i'm live in ${city} and my age ${this.age}`)
+
+// }
+
+// const obj={
+
+//     age:20
+// }
+// myName.apply(obj,["Anjana","Palakkad"])
+
+
+
+
+
+
 function myName(name,city){
 
 console.log(`My name is ${name}.i'm live in ${city} and my age ${this.age}`)
 
 }
 
-const obj={
 
-    age:20
-}
-myName.apply(obj,["Anjana","Palakkad"])
+let bindFn=myName.bind({age:20});
+bindFn("Anjana","Palakkad");
