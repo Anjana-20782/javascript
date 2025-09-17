@@ -17,26 +17,38 @@
 // console.log("end")
 
 
-let arr=[1,2,[3,4],[5,[6]]]
-let result=[];
 
-function flatArray(){
 
-    for(ele of array)
-    {
-        if(array.isarray(ele))
-        {
 
-            result=result.concat(flatArray(ele))
-        }
 
-        else{
+// let arr=[1,2,[3,4],[5,[6]]]
 
-            result.push(ele)
-        }
-    }
 
-    return result;
-}
+// function flatArray(arr){
 
-console.log(flatArray())
+//     let result=[];
+//     for(ele of arr)
+//     {
+//         if(Array.isArray(ele))
+//         {
+
+//             result=result.concat(flatArray(ele))
+//         }
+
+//         else{
+
+//             result.push(ele)
+//         }
+//     }
+
+//     return result;
+// }
+
+// console.log(flatArray(arr))
+
+
+
+let x="25"
+let y=10;
+let z=x-y; 
+console.log(z)
