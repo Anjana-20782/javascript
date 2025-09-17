@@ -1,17 +1,42 @@
-console.log("start")
+// console.log("start")
 
-setTimeout(()=>{
+// setTimeout(()=>{
 
-    console.log("macro task1")
-     console.log("macro task2")
+//     console.log("macro task1")
+//      console.log("macro task2")
 
-},0);
+// },0);
 
-Promise.resolve().then(()=>{
+// Promise.resolve().then(()=>{
 
-    console.log("micro task 1")
-    console.log("micro task 2")
-});
+//     console.log("micro task 1")
+//     console.log("micro task 2")
+// });
 
 
-console.log("end")
+// console.log("end")
+
+
+let arr=[1,2,[3,4],[5,[6]]]
+let result=[];
+
+function flatArray(){
+
+    for(ele of array)
+    {
+        if(array.isarray(ele))
+        {
+
+            result=result.concat(flatArray(ele))
+        }
+
+        else{
+
+            result.push(ele)
+        }
+    }
+
+    return result;
+}
+
+console.log(flatArray())
